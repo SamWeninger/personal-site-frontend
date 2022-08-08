@@ -1,0 +1,82 @@
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.home-page {
+  min-height: 90vh;
+  position: relative;
+  margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+}
+
+.home-page-small {
+  min-height: 90vh;
+  position: relative;
+  margin-bottom: 5vh;
+  display: block;
+  align-items: center;
+}
+
+.grid-large {
+  max-width: 70%;
+}
+
+.grid-small {
+  max-width: 40%;
+  margin: auto;
+}
+
+.home-img {
+  margin-top: 2.5%; 
+  margin-left: 2.5%;
+  max-width: 45%;
+  min-width: 300px;
+  max-height: 85vh;
+  height: auto;
+  display: flex-start;
+  box-shadow: 0px 1px 2px 0px rgba(31,24,24,0.75);
+}
+
+.home-elem-large {
+  margin-top: 2.5%;
+  max-width: 25%;
+  min-width: 100px;
+  max-height: 90%;
+}
+
+.home-elem-small {
+  margin-top: 2.5%;
+  max-width: 55%;
+  min-width: 70px;
+  max-height: 90%;
+  margin-right: auto;
+  margin-left: 5%;
+}
+  
+.home-page-small .home-elem-small {
+  margin-left: 35%;
+}
+
+.home-content {
+  color: white;
+  font-size: 1em;
+  position: absolute;
+  bottom:0;
+  right:0;
+  margin-right: 2.5%;
+  margin-bottom: 1%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.home-title {
+  font-size: max(2vw, 100%);
+  padding-left: 3.5%;
+}
+
+.home-title h2 {
+  padding-top: 5%;
+  padding-left: 1%;
+}

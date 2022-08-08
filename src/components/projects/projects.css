@@ -1,0 +1,32 @@
+.project-page {
+  min-height: 90vh;
+  position: relative;
+  margin-bottom: 5vh;
+  align-items: center;
+  margin: auto;
+
+}
+
+.project-grid {
+  display: flex;
+  margin-left: 5%;
+  margin-top: 2.5%;
+  align-items: center;
+}
+
+.project-apps {
+  display: flex;
+  padding-top: 5%;
+}
+
+.project-wrapper {
+  width: 22.5%;
+  min-width: 250px;
+  
+  margin: auto;
+  margin-bottom: 2.5%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+
+  box-shadow: 0px 1px 2px 0px rgba(31,24,24,0.75);
+} 

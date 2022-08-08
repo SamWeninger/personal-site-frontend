@@ -1,0 +1,57 @@
+import React from "react";
+import Grid from "@mui/material/Grid";
+import useWindowDimensions from "./Window";
+import Image from "./Image";
+
+import "./home.css"
+
+import sam from "../../img/sam.jpeg";
+import fam from "../../img/fam.jpg";
+
+function Home() {
+  return (
+    <div
+      className={
+        useWindowDimensions().width > 670 ? "home-page" : "home-page-small"
+      }
+    >
+      <div
+        className={
+          useWindowDimensions().width > 917 ? "grid-large" : "grid-small"
+        }
+      >
+        <Grid container justifyContent="flex-start" alignItems="center">
+          <div className="home-img">
+            <Image 
+              img={sam} 
+              text="Vancouver Island, 2002"
+            />
+          </div>
+          <div className="home-img">
+            <Image 
+              img={fam} 
+              text="Oregon Coast, 2004"
+            />
+          </div>
+        </Grid>
+      </div>
+      <div
+        className={
+          useWindowDimensions().width > 917
+            ? "home-elem-large"
+            : "home-elem-small"
+        }
+      >
+        <div className="home-title">
+          <h1>sam</h1>
+          <h1>weninger</h1>
+          <h2>Software engineer at Microsoft. Ineligible NHL draft prospect.</h2>
+        </div>
+        {/* <h2>computer engineering @ university of toronto</h2> */}
+      </div>
+      <div className="page-anchor" id="home"></div>
+    </div>
+  );
+}
+
+export default Home;
