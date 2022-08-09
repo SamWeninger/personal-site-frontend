@@ -3,9 +3,9 @@ import Content from "../card/Content";
 
 function Image(props) {
     return (
-        <div class="container">
+        <div className="container">
             <img src={props.img} alt="" class="image" />
-            <div class="overlay">
+            <div className="overlay">
                 <Content {...props} />
             </div>
         </div>
