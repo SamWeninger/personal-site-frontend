@@ -7,8 +7,6 @@ import Education from "./edu/Education";
 import Footer from "./footer/Footer";
 // import { Routes, Route } from "react-router-dom";
 
-// import Quotes from "./Quotes";
-
 import axios from "axios";
 
 import "../styles.css";
