@@ -26,20 +26,14 @@ function App() {
     backendCall();
   }, []); // '[]' param => only use effect once on page render
 
-  // useEffect(() => {
-  //   fetch("/")
-  //   .then(res => res.json())
-  //   .then(data => setData(data))
-  // }, []);
-
   return (
     <div className="App">
       <Navbar />
-      <Home />
-      <Projects />
-      <Work />
-      <Education />
-      <Footer />
+      <Home {...data.home} />
+      <Projects {...data.projects} />
+      <Work {...data.work} />
+      <Education {...data.education}/>
+      <Footer {...data.footer} />
     </div>
   );
 }

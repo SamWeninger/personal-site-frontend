@@ -8,12 +8,7 @@ import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 
 import "./footer.css"
 
-function Footer() {
-    const github = "https://github.com/SamWeninger";
-    const linkedin = "https://www.linkedin.com/in/samuel-weninger/";
-    const hockey = "https://www.eliteprospects.com/player/455776/sam-weninger";
-    const message = "https://www.mcdonalds.com/us/en-us/full-menu.html";
-
+function Footer(props) {
     return (
         <div className="footer">
             <div className="footer-stack">
@@ -25,7 +20,7 @@ function Footer() {
                     >
 
                     <IconButton className="footer-button" aria-label="github" size="large">
-                        <a href={github} target="_blank" rel="noreferrer">
+                        <a href={props.github} target="_blank" rel="noreferrer">
                             <GitHubIcon 
                                 fontSize="inherit" 
                                 sx={{color: "white", borderRadius: "50%" }}
@@ -33,7 +28,7 @@ function Footer() {
                         </a>
                     </IconButton>
                     <IconButton className="footer-button" aria-label="linkedin" size="large">
-                        <a href={linkedin} target="_blank" rel="noreferrer">
+                        <a href={props.linkedin} target="_blank" rel="noreferrer">
                             <LinkedInIcon 
                                 fontSize="inherit"
                                 sx={{color: "white"}}
@@ -41,7 +36,7 @@ function Footer() {
                         </a>
                     </IconButton>
                     <IconButton className="footer-button" aria-label="hockey" size="large">
-                        <a href={hockey} target="_blank" rel="noreferrer">
+                        <a href={props.hockey} target="_blank" rel="noreferrer">
                             <SportsHockeyIcon 
                                 fontSize="inherit" 
                                 sx={{color: "white"}}
@@ -49,7 +44,7 @@ function Footer() {
                         </a>
                     </IconButton>
                     <IconButton className="footer-button" aria-label="message" size="large">
-                        <a href={message} target="_blank" rel="noreferrer">
+                        <a href={props.message} target="_blank" rel="noreferrer">
                             <ChatBubbleIcon 
                                 fontSize="inherit" 
                                 sx={{color: "white"}}

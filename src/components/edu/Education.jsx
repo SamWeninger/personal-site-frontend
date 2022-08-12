@@ -1,29 +1,11 @@
 import React from "react";
 import Stack from '@mui/material/Stack';
+import ImageRender from "../ImageRender";
 
-import uoft from "../../img/uoft.png";
 
 import "./edu.css";
 
-function Education() {
-  const props = {
-    school: "University of Toronto",
-    degree: "Bachelor of Applied Science",
-    major: "Computer Engineering, Minor in A.I. Engineering",
-    gpa: "3.72/4",
-    courses: [
-      "ECE 444",
-      "ECE 297",
-      "ECE 444"
-    ],
-    awards: [
-      "heehee",
-      "hoohoo"
-    ]
-  }
-
-  const buutt = "https://www.google.com/search?q=butts&rlz=1C5CHFA_enUS751US751&oq=butts&aqs=chrome..69i57j46i512j46i10i131i433j0i512j46i175i199i512j46i10i131i199i433i465j46i10i131i433j0i512j46i175i199i512.863j0j7&sourceid=chrome&ie=UTF-8";
-
+function Education(props) {
   return (
     <div className="page">
       <h1 className="page-title">
@@ -32,7 +14,11 @@ function Education() {
       <div className="container edu-wrapper">
 
         <div className="edu-logo">
-          <img src={uoft} className="image" alt="uoft" />
+          <div className="image">
+            <ImageRender ext={props.image}/>
+          </div>
+          
+          {/* <img src={uoft} className="image" alt="uoft" /> */}
         </div>
 
         <div className="edu-label">
@@ -51,14 +37,14 @@ function Education() {
               <p>GPA: {props.gpa}</p>
               <p style={{marginLeft: "1%"}}>Special Courses:
                 <ul>
-                  {props.courses.map((course) => <li>
-                    <a href={buutt} target="_blank" rel="noreferrer">{course}</a>
+                  {props.courses && props.courses.map((course) => <li>
+                    <a href={course.code} target="_blank" rel="noreferrer">{course.class}</a>
                   </li>)}
                 </ul>
               </p>
               <p style={{marginLeft: "1%"}}>Awards:
                 <ul>
-                  {props.awards.map((award) => <li>{award}</li>)}
+                  {props.awards && props.awards.map((award) => <li>{award}</li>)}
                 </ul>
               </p>
             </Stack>

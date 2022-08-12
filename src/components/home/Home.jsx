@@ -5,10 +5,7 @@ import Image from "./Image";
 
 import "./home.css"
 
-import sam from "../../img/sam.jpeg";
-import fam from "../../img/fam.jpg";
-
-function Home() {
+function Home(props) {
   return (
     <div
       className={
@@ -21,18 +18,23 @@ function Home() {
         }
       >
         <Grid container justifyContent="flex-start" alignItems="center">
-          <div className="home-img">
+          {props.pics && props.pics.map((item) => 
+            <div className="home-img">
+              <Image {...item} />
+            </div>
+          )}
+          {/* <div className="home-img">
             <Image 
               img={sam} 
               text="Vancouver Island, 2002"
             />
-          </div>
-          <div className="home-img">
+          </div> */}
+          {/* <div className="home-img">
             <Image 
               img={fam} 
               text="Oregon Coast, 2004"
             />
-          </div>
+          </div> */}
         </Grid>
       </div>
       <div
@@ -43,9 +45,9 @@ function Home() {
         }
       >
         <div className="home-title">
-          <h1>sam</h1>
-          <h1>weninger</h1>
-          <h2>Software engineer at Microsoft. Ineligible NHL draft prospect.</h2>
+          <h1>{props.fName}</h1>
+          <h1>{props.lName}</h1>
+          <h2>{props.description}</h2>
         </div>
         {/* <h2>computer engineering @ university of toronto</h2> */}
       </div>
