@@ -17,21 +17,6 @@ function Projects(props) {
                 <ContentCard type="project" {...proj}/>
               </div>
           )}
-          {/* <div className="project-wrapper" style={{backgroundColor: "#14639f"}}>
-            <ContentCard type="project" img={courseFinder} {...props}/>
-          </div>
-          <div className="project-wrapper" style={{backgroundColor: "#94d8ac"}}>
-            <ContentCard type="project" img={janeStreet} {...props} style={{padding: "1%"}}/>
-          </div>
-          <div className="project-wrapper" style={{backgroundColor: "#ffffff"}}>
-            <ContentCard type="project" img={bri} {...props}/>
-          </div>
-          <div className="project-wrapper" style={{backgroundColor: "#ffffff"}}>
-            <ContentCard type="project" img={snakes} {...props}/>
-          </div>
-          <div className="project-wrapper" >
-            <ContentCard type="project" img={huawei} {...props}/>
-          </div> */}
         </Grid>
       </div>
       <div className="page-anchor" id="projects"></div>

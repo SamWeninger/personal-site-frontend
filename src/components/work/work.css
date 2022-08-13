@@ -19,6 +19,7 @@
 } 
 
 .work-header {
+  height: 25%;
   color: white;
   position: absolute;
   top:0;
@@ -30,12 +31,18 @@
 
 .work-description {
   left: 0;
-  top: 75%;
+  height: 80%;
+  margin-top: 30%;
+  margin-right: 2.5%;
   font-size: small;
   position: absolute;
   margin-left: 2.5%;
   margin-bottom: 1%;
   color: rgb(173, 172, 172);
+}
+
+.work-description p {
+  margin-bottom: 5%;
 }
 
 .work-page .container:hover .overlay {
@@ -50,3 +57,13 @@
   font-size: medium;
   color: rgb(207, 205, 205);
 }
+
+.work-description a {
+  color: inherit;
+}
+
+.work-description span {
+  margin-left: 1.5%;
+  font-style: italic;
+}
+

@@ -44,3 +44,21 @@
   background-color: yellow;
   color: black;
 } 
+
+.project-page .container:hover .overlay {
+  opacity: 0.8;
+}
+
+.project-github {
+  padding-right: 5%;
+}
+
+.project-github a:hover {
+  background-color: white;
+  color: black;
+}  
+
+.project-github a:active {
+  background-color: yellow;
+  color: black;
+}

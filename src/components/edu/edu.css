@@ -59,7 +59,8 @@
   }
 
   .edu-stack {
-    margin-top: 7.5%;
+    /* margin-top: 7.5%; */
+    margin-right: 2.5%;
   }
 
   .edu-description p {
@@ -76,9 +77,9 @@
   }
 
   .edu-description li {
-    margin-left: 5%;
-    font-size: 85%;
-    
+    margin-left: 2.5%;
+    font-size: 75%;
+    list-style-type: circle;
   }
 
   .edu-description a {
