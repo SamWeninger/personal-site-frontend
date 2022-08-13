@@ -24,8 +24,6 @@ function App() {
     backendCall();
   }, []); // '[]' param => only use effect once on page render
 
-  console.log("DATA: " + data);
-
   return (
     <div className="App">
       <Navbar />
