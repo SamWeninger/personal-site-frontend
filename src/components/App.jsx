@@ -14,8 +14,11 @@ import "../styles.css";
 function App() {
   const [data, setData] = useState({});
 
+  const url = "http://ec2-13-59-91-83.us-east-2.compute.amazonaws.com/";
+  // const url = "http://localhost:5000/";
+
   function backendCall() {
-    axios.get("http://localhost:5000/",  { crossdomain: true }).then(response => {
+    axios.get(url,  { crossdomain: true }).then(response => {
       setData(response.data)
     });
   }
