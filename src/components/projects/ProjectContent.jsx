@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ProjectTitle from "./ProjectTitle";
 
