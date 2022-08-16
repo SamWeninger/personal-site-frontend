@@ -23,18 +23,6 @@ function Home(props) {
               <Image {...item} />
             </div>
           )}
-          {/* <div className="home-img">
-            <Image 
-              img={sam} 
-              text="Vancouver Island, 2002"
-            />
-          </div> */}
-          {/* <div className="home-img">
-            <Image 
-              img={fam} 
-              text="Oregon Coast, 2004"
-            />
-          </div> */}
         </Grid>
       </div>
       <div
